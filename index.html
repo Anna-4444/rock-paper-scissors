@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="content-wrapper">
+        <header>
+            <h1>Rock, Paper, Scissors</h1>
+            <p class="rules">Can you beat the computer?<br> Play 5 Rounds and see who wins the most!</p>
+            <p class="who-won hide"></p>
+        </header>
+        <div class="rounds-win-lose">
+            <p class="your-wins"></p>
+            <p class="computer-wins"></p>
+            <p class="ties"></p>
+        </div>
+        <div>
+            <p class="current-round"></p>
+            <button class="reset hide">Try Again?</button>
+        </div>
+        <div class="round-set-up">
+            <label for="weapon-select">Choose Your Weapon!</label>
+            <select name="weapon" id="weapon-select">
+                <option value="">Choose Wisely</option>
+                <option value="rock">Rock</option>
+                <option value="paper">Paper</option>
+                <option value="scissor">Scissors</option>
+            </select>
+            <button class="challenge hide">Challenge the Computer!</button>
+        </div>
+        <div class="round-results hide">
+            <p class="computer-choice"></p>
+            <p class="results"></p>
+            <button class="next">Play Next Round</button>
+        </div>
+    </div>
+</body>
+</html>
