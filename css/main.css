@@ -1,11 +1,10 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    width: 100vw;
-    height: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: honeydew;
 }
 
 .content-wrapper {
