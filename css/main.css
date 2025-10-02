@@ -9,46 +9,55 @@ body {
 
 .content-wrapper {
     width: 90%;
-    margin: 0px auto;
+    margin: 1rem auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 1rem;
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
+
 p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    margin: 0;
 }
 
 .rounds-win-lose {
     width: 100%;
+    padding: 1rem;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 1rem;
     color: white;
     background-color:cadetblue;
     border-top: 3px solid #375758;
     border-bottom: 3px solid #375758;
 }
 
+.rounds {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
 .round-set-up {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 label {
-    margin-top: 20px;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 #weapon-select {
     padding: 15px 30px;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: white;
     background-color:cadetblue;
     border-color: cadetblue;
@@ -58,13 +67,14 @@ label {
 .round-results {
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    padding: 1rem;
+    gap: 1rem;
 }
 
 .versus {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .win {
@@ -86,9 +96,8 @@ label {
 button {
     color: white;
     padding: 15px 30px;
-    margin: 20px 0px;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     border-radius: 10px;
     cursor: pointer;
     background-color:cadetblue;
@@ -101,4 +110,35 @@ button:hover {
 
 .hide {
     display: none;
+}
+
+@media (min-width: 768px) {
+    .content-wrapper {
+        margin: 2rem auto;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    p,
+    label,
+    #weapon-select,
+    button {
+        font-size: 1.5rem;
+    }
+
+    .content-wrapper,
+    .rounds-win-lose,
+    .rounds,
+    .round-set-up,
+    .versus,
+    .round-results {
+        gap: 2rem;
+    }
+
+    .rounds-win-lose,
+    .round-results {
+        padding: 2rem;
+    }
 }
